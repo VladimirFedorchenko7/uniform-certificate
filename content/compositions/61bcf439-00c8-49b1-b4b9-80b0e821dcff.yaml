@@ -1,0 +1,724 @@
+composition:
+  _name: Custom Product Details Page (new design)
+  _id: 61bcf439-00c8-49b1-b4b9-80b0e821dcff
+  _slug: espresso-gpt-145
+  type: productDetailsPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Product by Slug Content/0/name} Details Page
+  slots:
+    pageFooter:
+      - _id: 9c43ac75-5d4e-4a83-81c2-462b7fea394f
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 04fca4f0-c26a-4408-973e-63e0d619b201
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 05807edb-b8b6-4a49-8b4f-178b565bbf28
+        type: hero
+        variant: backgroundImage
+        parameters:
+          title:
+            type: text
+            value: Where future technologies meet timeless taste
+          video:
+            type: link
+            value:
+              path: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1693387616/videos/pexels-cristian-rojas.mp4
+              type: url
+          duration:
+            type: select
+            value: medium
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: select
+            value: Light
+          fullHeight:
+            type: checkbox
+            value: true
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: ELEVATE EVERY ESPRESSO
+          eyebrowText:
+            type: text
+            value: ESPRESSOGPT
+          overlayColor:
+            type: tp-color-style-parameter
+            value: base-300
+          animationType:
+            type: select
+            value: dynamic
+          paddingBottom:
+            type: select
+            value: None
+          overlayOpacity:
+            type: tp-slider-parameter
+            value: 50%
+          containerVariant:
+            type: select
+            value: fluentContent
+          oneByOneAnimation:
+            type: checkbox
+            value: true
+      - _id: 8cf24323-5960-432a-82b4-7df7c416da0d
+        type: productInfo
+        _pattern: f0a81998-50d1-4a24-b0e8-07ae3df85706
+        _dataResources:
+          Product by Slug Content:
+            type: fakeCommerceProductBySlug
+            variables:
+              value: espresso-gpt-145
+      - _id: 71158725-d81b-41b9-9ede-fadc3c998bc3
+        type: container
+        slots:
+          container-inner:
+            - _id: e40ca256-4535-45ea-8344-2904fe6c28a1
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: 611b313d-f7dc-494f-ae74-91a118ed3dfb
+                    type: card
+                    variant: featured
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693306946/coffee-icons/Group_224_pq43fs.svg
+                      title:
+                        type: text
+                        value: Quantum heating technology
+                      duration:
+                        type: select
+                        value: medium
+                      objectFit:
+                        type: select
+                        value: contain
+                      description:
+                        type: text
+                        value: >
+                          Say goodbye to waiting. The EspressoGPT harnesses
+                          quantum mechanics to heat your water in a fraction of
+                          a second, ensuring the perfect temperature for your
+                          espresso every time.
+                      animationType:
+                        type: select
+                        value: dynamic
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                  - _id: eb4801d0-6829-4ec1-95de-f06bf812af01
+                    type: card
+                    variant: featured
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693306817/coffee-icons/icon__equalizer__mod7sx.svg
+                      title:
+                        type: text
+                        value: AI-powered taste customization
+                      duration:
+                        type: select
+                        value: medium
+                      objectFit:
+                        type: select
+                        value: contain
+                      description:
+                        type: text
+                        value: >-
+                          We understands your palette After just a few uses,
+                          EspressoGPT learns to brew your espresso to your exact
+                          liking, adjusting grind size, water temperature, and
+                          brewing time.
+                      animationType:
+                        type: select
+                        value: dynamic
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                  - _id: 211a95bc-e8df-48da-b60b-24150da441d3
+                    type: card
+                    variant: featured
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693307035/coffee-icons/Diamond_sratyz.svg
+                      title:
+                        type: text
+                        value: Holographic interface
+                      duration:
+                        type: select
+                        value: medium
+                      objectFit:
+                        type: select
+                        value: contain
+                      description:
+                        type: text
+                        value: >
+                          Touchscreens are a thing of the past. EspressoGPT 's
+                          floating holographic interface offers an intuitive
+                          user experience. Adjust settings, browse recipes, or
+                          get a virtual barista tutorial with a simple hand
+                          gesture.
+                      animationType:
+                        type: select
+                        value: dynamic
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+                  - _id: 70e3d896-7172-4c75-97c7-0e99e32a71db
+                    type: card
+                    variant: featured
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693307120/coffee-icons/icon__flower__k4kjf6.svg
+                      title:
+                        type: text
+                        value: Carbon-neutral energy source
+                      duration:
+                        type: select
+                        value: medium
+                      objectFit:
+                        type: select
+                        value: contain
+                      description:
+                        type: text
+                        value: >-
+                          We care for the planet as much as you do. Our espresso
+                          machine is powered by a sustainable and recyclable
+                          energy cell that has zero carbon footprint.
+                      animationType:
+                        type: select
+                        value: dynamic
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: none
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: medium
+                gapY:
+                  type: tp-slider-parameter
+                  value: none
+                title:
+                  type: text
+                  value: Feature
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '4'
+        parameters:
+          title:
+            type: text
+            value: Features
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: bdc66f4f-1a61-4648-9159-16ed94077c2d
+        type: productGalleryDAM
+        variant: fluentContent
+        parameters:
+          items:
+            type: asset
+            value:
+              - id: e58bf816-d583-4e4d-b765-e581c958d62a
+                url: >-
+                  https://res.cloudinary.com/uniform-demos/image/upload/v1693309094/products/EspressoGPT_image_1.jpg
+                source: custom-url
+              - id: 5e7b8d1e-0f72-4215-a769-4d59d1765a7f
+                url: >-
+                  https://res.cloudinary.com/uniform-demos/image/upload/v1693566380/products/EspressoGPT_image_2.jpg
+                source: custom-url
+              - id: e756936d-9e2c-46fa-b36e-06e64b739b63
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/wl4o3BJNR8qhp57ezsFrFQ-EspressoGPT_image_3.jpg
+                type: image
+                title: EspressoGPT_image_3.jpg
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/jpeg
+                description: ''
+              - id: 788737df-d806-4cf8-be93-61f5d947c4b6
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/9RB7RqbTRWKLEB7YKHqPhQ-EspressoGPT_image_4.png
+                type: image
+                title: EspressoGPT_image_4.png
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/png
+                description: ''
+              - id: dfa6bfde-d7b6-4eb8-ae58-964b3050ad67
+                url: >-
+                  https://canary-img.uniform.global/p/_egH9JFXRYSLCCOJDPWRAQ/361OuylSSVKJMs4EaaEg0A-EspressoGPT_image_5.png
+                type: image
+                title: EspressoGPT_image_5.png
+                width: 743
+                height: 480
+                source: uniform-assets
+                mediaType: image/png
+                description: ''
+          title:
+            type: text
+            value: Product Gallery
+          duration:
+            type: select
+            value: medium
+          paddingTop:
+            type: select
+            value: Small
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h4
+          animationType:
+            type: select
+            value: dynamic
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+          oneByOneAnimation:
+            type: checkbox
+            value: true
+      - _id: 26a16008-fac0-4bc5-8850-e4c72cde3cc5
+        type: container
+        slots:
+          container-inner:
+            - _id: 7ef8ea58-3bfc-46ab-86bb-e376c3fe5342
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: 147366b0-c738-44a0-8427-d121ee2dc215
+                    type: hero
+                    variant: imageLeft
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693313371/products/9483483bb6910ba7221ec5425db5007a_eugvmi.jpg
+                      title:
+                        type: text
+                        value: The drip on display
+                      duration:
+                        type: select
+                        value: medium
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      description:
+                        type: text
+                        value: >-
+                          Crystal-clear clarity, ensuring users can easily
+                          select their desired settings and monitor the brewing
+                          process in real-time. Its intuitive interface and
+                          vibrant visuals elevate the user experience
+                      eyebrowText:
+                        type: text
+                        value: Monitor the perfect brew
+                      animationType:
+                        type: select
+                        value: dynamic
+                      oneByOneAnimation:
+                        type: checkbox
+                        value: true
+                  - _id: 27a73f38-bd55-4938-bc19-11a6b4f34ab5
+                    type: hero
+                    variant: imageRight
+                    parameters:
+                      image:
+                        type: image
+                        value: >-
+                          https://res.cloudinary.com/uniform-demos/image/upload/v1693313369/products/0cf2809dba5cb58d843ae3a040be9808_yanbuz.png
+                      title:
+                        type: text
+                        value: Perfect specs
+                      duration:
+                        type: select
+                        value: medium
+                      titleStyle:
+                        type: tp-title-style-parameter
+                        value: h1
+                      description:
+                        type: text
+                        value: >-
+                          Modern design seamlessly blends minimalistic elegance
+                          with cutting-edge functionality, making it a statement
+                          piece in any contemporary kitchen. 
+                      eyebrowText:
+                        type: text
+                        value: Celebrate the art of coffee making
+                      animationType:
+                        type: select
+                        value: dynamic
+                      oneByOneAnimation:
+                        type: checkbox
+                        value: true
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: none
+                gapY:
+                  type: tp-slider-parameter
+                  value: large
+                title:
+                  type: text
+                  value: Product Story Grid
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '1'
+        parameters:
+          title:
+            type: text
+            value: Product Story
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: bde64a5c-3b60-4cb3-8352-9676f555b18d
+        type: container
+        slots:
+          container-inner:
+            - _id: 1414ad69-7d4b-4aaf-b6ff-ca712b9fa29b
+              type: grid
+              slots:
+                grid-inner:
+                  - _id: cfdb326c-4248-400a-bc1e-8b84e27ea9d1
+                    type: review
+                    parameters:
+                      date:
+                        type: text
+                        value: 02.07.2023
+                      stars:
+                        type: tp-slider-parameter
+                        value: '5'
+                      personName:
+                        type: text
+                        value: Hector Gibbons
+                      description:
+                        type: text
+                        value: >
+                          Ever since I laid my hands on the EspressoGPT, my
+                          mornings have never been the same. This isn't just an
+                          espresso machine; it's a marvel of modern technology.
+                          From its instant quantum heating to the way it
+                          intuitively knows just how I want my coffee, the
+                          EspressoGPT has transformed my daily ritual into a
+                          luxurious experience.
+                  - _id: e247b500-8e1d-40ac-85c5-696feaa72333
+                    type: review
+                    parameters:
+                      date:
+                        type: text
+                        value: 17.03.2023
+                      stars:
+                        type: tp-slider-parameter
+                        value: '5'
+                      personName:
+                        type: text
+                        value: Emily Selman
+                      description:
+                        type: text
+                        value: >
+                          The zero-gravity brewing mode is not just a feature;
+                          it's an experience that takes you on a journey every
+                          single time. And the self-cleaning mechanism? Pure
+                          genius! I never thought I'd be this excited about a
+                          coffee machine, but the EspressoGPT isn't just any
+                          machine. It's a testament to how far technology can go
+                          to perfect something as timeless as coffee.",
+              parameters:
+                gapX:
+                  type: tp-slider-parameter
+                  value: large
+                gapY:
+                  type: tp-slider-parameter
+                  value: none
+                title:
+                  type: text
+                  value: Reviews
+                columnsCount:
+                  type: tp-slider-parameter
+                  value: '2'
+        parameters:
+          title:
+            type: text
+            value: Reviews
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Small
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: 8ef23e46-0933-4eaa-aadd-1099a676e97a
+        type: container
+        slots:
+          container-inner:
+            - _id: bcb550ed-07cb-478b-b2e8-fc53eb7c4008
+              type: accordion
+              slots:
+                items:
+                  - _id: 5e705573-a89e-4003-add5-3b69ef82707a
+                    type: accordionItem
+                    parameters:
+                      title:
+                        type: text
+                        value: Does the EspressoGPT come with a warranty?
+                      description:
+                        type: text
+                        value: >-
+                          The zero-gravity brewing mode is not just a feature;
+                          it's an experience that takes you on a journey every
+                          single time. And the self-cleaning mechanism? Pure
+                          genius! I never thought I'd be this excited about a
+                          coffee machine, but the EspressoGPT isn't just any
+                          machine. It's a testament to how far technology can go
+                          to perfect something as timeless as coffee.
+                  - _id: 183d8eb0-66c1-43f9-842c-bfb8e8ea80a8
+                    type: accordionItem
+                    parameters:
+                      title:
+                        type: text
+                        value: Can I change my AI powered taste preferences?
+                      description:
+                        type: text
+                        value: >-
+                          The zero-gravity brewing mode is not just a feature;
+                          it's an experience that takes you on a journey every
+                          single time. And the self-cleaning mechanism? Pure
+                          genius! I never thought I'd be this excited about a
+                          coffee machine, but the EspressoGPT isn't just any
+                          machine. It's a testament to how far technology can go
+                          to perfect something as timeless as coffee.
+                  - _id: f2e9202d-5c23-4679-8cfd-ec95637eb3e5
+                    type: accordionItem
+                    parameters:
+                      title:
+                        type: text
+                        value: What if the holographic display isn’t working?
+                      description:
+                        type: text
+                        value: >-
+                          The zero-gravity brewing mode is not just a feature;
+                          it's an experience that takes you on a journey every
+                          single time. And the self-cleaning mechanism? Pure
+                          genius! I never thought I'd be this excited about a
+                          coffee machine, but the EspressoGPT isn't just any
+                          machine. It's a testament to how far technology can go
+                          to perfect something as timeless as coffee.
+              parameters:
+                title:
+                  type: text
+                  value: 'Bean There, Asked That: '
+        parameters:
+          title:
+            type: text
+            value: Accordion
+          paddingTop:
+            type: select
+            value: Small
+          paddingBottom:
+            type: select
+            value: Medium
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+      - _id: f6a37386-fe0d-45bf-aa94-1a36cb4fd200
+        type: hero
+        variant: twoColumns
+        parameters:
+          image:
+            type: image
+            value: >-
+              https://res.cloudinary.com/uniform-demos/image/upload/v1693316249/products/274c33f0d803e309dfd851f435fe0178_gfpvn6.jpg
+          title:
+            type: text
+            value: The future of the perfect brew
+          duration:
+            type: select
+            value: medium
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: select
+            value: Light
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: >-
+              When we speak of the 'perfect coffee bean', it's more than just a
+              catchphrase. To us, it embodies a journey of passion, precision,
+              and perseverance.
+
+
+              EspressoGPT is not just a product but a testament to our ethos. It
+              represents our unwavering commitment to delivering our best to a
+              global community of coffee lovers.
+          overlayColor:
+            type: tp-color-style-parameter
+            value: base-300
+          animationType:
+            type: select
+            value: dynamic
+          paddingBottom:
+            type: select
+            value: None
+          overlayOpacity:
+            type: tp-slider-parameter
+            value: 50%
+          containerVariant:
+            type: select
+            value: fluentContent
+          oneByOneAnimation:
+            type: checkbox
+            value: true
+      - _id: b65dccf0-facb-4fad-88aa-3ba753d54e27
+        type: container
+        slots:
+          container-inner:
+            - _id: 4d133351-3094-427c-b119-49480d80d42f
+              type: cardBlock
+              _pattern: 7f209571-9934-4219-ba2a-72afd062f04f
+              _dataResources:
+                Products Content:
+                  type: fakeCommerceProducts
+                  variables:
+                    productIds: 80,81,113,128,129
+        parameters:
+          title:
+            type: text
+            value: Recommended
+          paddingTop:
+            type: select
+            value: Medium
+          paddingBottom:
+            type: select
+            value: Medium
+          backgroundType:
+            type: tp-background-type-parameter
+            value: Dark
+  _dataResources:
+    Product by Slug Content:
+      type: fakeCommerceProductBySlug
+      variables:
+        value: espresso-gpt-145
+  _overrides:
+    04fca4f0-c26a-4408-973e-63e0d619b201:
+      parameters:
+        syntheticGap:
+          type: tp-slider-parameter
+          value: None
+    4d133351-3094-427c-b119-49480d80d42f:
+      parameters:
+        title:
+          type: text
+          value: Recomended Beans
+        textColor:
+          type: select
+          value: Light
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+    8cf24323-5960-432a-82b4-7df7c416da0d:
+      parameters:
+        image:
+          type: image
+          value: ${#jptr:/Product by Slug Content/0/images/5/url}
+        duration:
+          type: select
+          value: medium
+        features:
+          type: json
+          value:
+            - Free shipping
+            - 3 year warranty
+            - Starter bean kit
+        subTitle:
+          type: text
+          value: Where modern technology meets timeless taste
+        fullHeight:
+          type: checkbox
+          value: null
+        eyebrowText:
+          type: text
+          value: EXPERIENCE A REVOLUTION
+        animationType:
+          type: select
+          value: dynamic
+        overlayOpacity:
+          type: tp-slider-parameter
+          value: 0%
+        oneByOneAnimation:
+          type: checkbox
+          value: true
+        primaryButtonAnimationType:
+          type: select
+          value: dynamic
+        secondaryButtonAnimationType:
+          type: select
+          value: dynamic
+    4d133351-3094-427c-b119-49480d80d42f|1a7427e0-4b67-46b4-8f3d-feba9f105240:
+      parameters:
+        duration:
+          type: select
+          value: medium
+        textColor:
+          type: select
+          value: Light
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Products Content Loop Item/slug}
+        buttonStyle:
+          type: tp-button-style-parameter
+          value: secondary
+        animationType:
+          type: select
+          value: static
+        buttonAnimationType:
+          type: select
+          value: dynamic
+created: '2023-09-26T08:46:52.068374+00:00'
+modified: '2023-09-26T08:46:52.068374+00:00'
+pattern: false

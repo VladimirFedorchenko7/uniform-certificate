@@ -1,0 +1,150 @@
+# yaml-language-server: $schema=<https://canary.uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://canary.uniform.app/schemas/json-schema/component-definition/v1.json
+id: productGalleryDAM
+name: Product Gallery (DAM)
+icon: ui-kit
+parameters:
+  - id: title
+    name: Title
+    type: text
+    helpText: Section title
+    typeConfig: null
+  - id: titleStyle
+    name: Title Style
+    type: tp-title-style-parameter
+    helpText: ''
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    helpText: ''
+    typeConfig:
+      multiline: true
+      linesCount: '10'
+  - id: items
+    name: Items
+    type: asset
+    helpText: ''
+    typeConfig:
+      min: 1
+  - id: group_styling
+    name: Styling
+    type: group
+    typeConfig:
+      childrenParams:
+        - backgroundType
+        - paddingTop
+        - paddingBottom
+        - marginTop
+        - marginBottom
+  - id: backgroundType
+    name: Background Type
+    type: tp-background-type-parameter
+    helpText: ''
+    typeConfig: null
+  - id: paddingTop
+    name: Padding Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: paddingBottom
+    name: Padding Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: marginTop
+    name: Margin Top
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: marginBottom
+    name: Margin Bottom
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Small
+          value: Small
+        - text: Medium
+          value: Medium
+        - text: Large
+          value: Large
+        - text: None
+          value: None
+  - id: group_animationSettings
+    name: Animation Settings
+    type: group
+    typeConfig:
+      collapsed: true
+      childrenParams:
+        - animationType
+        - duration
+        - oneByOneAnimation
+  - id: animationType
+    name: Animation Type
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Static
+          value: static
+        - text: Dynamic
+          value: dynamic
+  - id: duration
+    name: Duration
+    type: select
+    helpText: ''
+    typeConfig:
+      options:
+        - text: Slow
+          value: slow
+        - text: Medium
+          value: medium
+        - text: Fast
+          value: fast
+  - id: oneByOneAnimation
+    name: One by One Animation
+    type: checkbox
+    helpText: ''
+    typeConfig: null
+categoryId: 2da8c924-14d5-470b-9fe4-1e56521551e5
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/csk-preview-images/UniformTheme/Product_Gallery_preview_image
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2023-09-19T09:06:46.35819+00:00'
+updated: '2023-09-22T08:35:55.393622+00:00'
+variants:
+  - id: backgroundInContainer
+    name: Background In Container
+  - id: fluentContent
+    name: Fluent Content

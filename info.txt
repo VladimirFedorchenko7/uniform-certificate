@@ -1,0 +1,6 @@
+repo: demo-v-next
+branch: main
+commit: cd8adf9ba635d57ee31438aa651486a219eb3302
+project: commerce-starter
+variant: default
+date/time: 10/17/2023, 5:20:39 PM

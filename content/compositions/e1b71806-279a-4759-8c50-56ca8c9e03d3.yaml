@@ -1,0 +1,101 @@
+composition:
+  _name: Beans
+  _id: e1b71806-279a-4759-8c50-56ca8c9e03d3
+  _slug: beans
+  type: productCategoryPage
+  parameters:
+    pageTitle:
+      type: text
+      value: Coffee Beans Page
+  slots:
+    pageFooter:
+      - _id: 31be9b93-5c67-4abc-bb8c-1ba921d22a68
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 7e95ab6d-606a-4575-ba9d-c765d69b4c78
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: ca6cc5ef-4c72-40a2-bb81-3fe5211de5b8
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: image
+            value: >-
+              https://res.cloudinary.com/uniform-demos/image/upload/v1692282831/coffee-marketing/Rectangle_7_rskl2m_pmepat.png
+          title:
+            type: text
+            value: Beans for all your brewing needs
+          video:
+            type: link
+            value:
+              path: >-
+                https://res.cloudinary.com/uniform-demos/video/upload/v1693387616/videos/pexels-mizuno-rojas.mp4
+              type: url
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: select
+            value: Light
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          overlayColor:
+            type: tp-color-style-parameter
+            value: base-300
+          paddingBottom:
+            type: select
+            value: None
+          overlayOpacity:
+            type: tp-slider-parameter
+            value: 50%
+          containerVariant:
+            type: select
+            value: fluentContent
+      - _id: 44060180-5429-428b-970d-b3e41886efc5
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 8d10e073-af2a-4abc-b203-17b3fe0f92a5
+        type: grid
+        _pattern: b2b50390-1940-482d-95e7-4990a59ffd64
+  _overrides:
+    8d10e073-af2a-4abc-b203-17b3fe0f92a5:
+      parameters:
+        title:
+          type: text
+          value: Products List
+    8d10e073-af2a-4abc-b203-17b3fe0f92a5|6b42059d-6440-4bee-aa11-31117deda00d|9b21a0f9-9a80-43fa-948c-e98ce121ccba:
+      parameters:
+        textColor:
+          type: select
+          value: Dark
+        buttonLink:
+          type: link
+          value:
+            path: /products/:product-slug
+            type: projectMapNode
+            nodeId: fb657541-0488-4c22-bce4-64c9cd71bdde
+            projectMapId: 62588085-7894-4810-84b6-eaaf0cb5213c
+            dynamicInputValues:
+              product-slug: ${#jptr:/Products Query Content data Loop Item/slug}
+created: '2023-09-26T08:46:51.412375+00:00'
+modified: '2023-09-26T08:46:51.412375+00:00'
+pattern: false
